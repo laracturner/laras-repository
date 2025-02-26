@@ -1,0 +1,24 @@
+#1
+PHRASE=input("enter a phrase with different cases and spaces before and after it")
+#2
+PHRASE2=PHRASE.lower()
+PHRASE3=PHRASE2.replace(" ","")
+#3
+WORD=input("enter a word to find")
+print(PHRASE3.find(WORD))
+#4
+WORD2=input("enter a word to replace")
+WORD3=input("enter a word to replace with")
+PHRASE4=PHRASE3.replace(WORD2,WORD3)
+#5
+WORDS=PHRASE.split()
+print(WORDS[0])
+print(WORDS[-1])
+#6
+PHRASE5="-".join(WORDS)
+#7
+PHRASE6=PHRASE4[:3]+PHRASE4[-3:]
+#8
+print(PHRASE6)
+#9
+print(PHRASE6*3)
